@@ -8,7 +8,8 @@ import {
   NextSSRInMemoryCache,
   SSRMultipartLink
 } from '@apollo/experimental-nextjs-app-support/ssr';
-const STRAPI_URL = process.env.STRAPI_URL || 'https://todo-api-fg.onrender.com';
+const STRAPI_URL =
+  process.env.STRAPI_URL || 'http://todo-api-production-c166.up.railway.app';
 
 function makeClient() {
   const httpLink = new HttpLink({
